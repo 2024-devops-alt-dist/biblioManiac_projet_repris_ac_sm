@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Détails du Livre</title>
+    <link rel="stylesheet" href="../css/detail.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <nav class="navbar">
+          <div class="navbar-toggle" id="navbar-toggle">☰</div>
+          <ul class="navbar-menu" id="navbar-menu">
+            <li><a href="allBooks.html">Books</a></li>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="login.html" class="btn btn-secondary">Sign In</a>
+            </li>
+            <li>
+              <a href="#" class="btn btn-primary">Register</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="book-detail" id="book-detail"></main>
+
+    <footer>
+      <p>© 2024 Bibliomaniac. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("navbar-toggle")
+        .addEventListener("click", function () {
+          const navbarMenu = document.getElementById("navbar-menu");
+          navbarMenu.classList.toggle("show");
+        });
+    </script>
+    <!-- <script src="../js/fetch.js"></script> -->
+    <script src="../js/bookDetails.js"></script>
+  </body>
+</html>
